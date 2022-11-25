@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "denest"
+version = "0.1.1"
+description = ""
+authors = ["Tyler Etheridge <tylerjetheridge@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.7.0"}
+
+[tool.poetry.scripts]
+denest = "denest.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
